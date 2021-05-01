@@ -10,7 +10,11 @@
     <link rel="stylesheet" type="text/css" href="./css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0, 
+     user-scalable=0"
+    />
     <meta
       name="description"
       content="En MBM Soluciones Contables queremos apoyarle desde el comienzo, brindándole siempre la atención personalizada que merece. Nuestro equipo de contadores le acompañará desde el nacimiento de su empresa y durante todo su crecimiento."
@@ -63,11 +67,13 @@
       <div class="section no-pad-bot halfScreenHeightInner">
         <div class="container">
           <br /><br />
-          <h1 class="header center text-lighten-2">
-            Abrimos <br class="hide-on-large-only" />
-            <div id="text"></div>
-            <div id="cursor"></div>
-          </h1>
+          <div class="main-title-container">
+            <h1 class="header center text-lighten-2">
+              Abrimos <br class="hide-on-large-only" />
+              <div id="text"></div>
+              <div id="cursor"></div>
+            </h1>
+          </div>
           <div class="row center">
             <h5 class="subheader col s12 light">
               Somos parte de su equipo. En MBM queremos apoyarle desde el
@@ -483,6 +489,104 @@
       </div>
     </div>
 
+    <hr />
+
+    <!-- Section 6 -->
+    <div class="container" id="contact">
+      <div class="section halfScreenHeightInner">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>Realice una consulta</h4>
+            <p class="light">
+              Puede utilizar el siguiente formulario de contacto para realizar
+              cualquier consulta que desee. ¡Nuestro equipo recibirá su mensaje
+              y se pondrá en contacto con usted lo más pronto posible!
+            </p>
+            <div class="row">
+              <div class="col m12 l4 offset-l1">
+                <h6>¡Escríbanos!</h6>
+                <p class="light">
+                  ¡Si tiene alguna consulta, no dude en escribirnos!
+                </p>
+                <p class="light">
+                  Nuestro equipo de profesionales recibirá su consulta y se
+                  contactará con usted a la dirección de correo electrónico
+                  provista.
+                </p>
+                <p class="light">
+                  Por favor, asegúrese de agregar todos los detalles relevantes
+                  a su consulta en el cuerpo del correo.
+                </p>
+              </div>
+
+              <form
+                class="col m12 l6 offset-l1"
+                action="https://formspree.io/f/xjvjgwjd"
+                method="POST"
+              >
+                <div class="row marginBottomZero">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input
+                      id="icon_prefix"
+                      type="text"
+                      class="validate"
+                      name="name"
+                      required
+                    />
+                    <label for="icon_prefix">Su nombre completo</label>
+                  </div>
+                </div>
+                <div class="row marginBottomZero">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input
+                      id="email"
+                      type="email"
+                      class="validate"
+                      name="_replyto"
+                      required
+                    />
+                    <label for="email"
+                      >Su dirección de correo electrónico</label
+                    >
+                    <span
+                      class="helper-text"
+                      data-error="La dirección de correo ingresada no tiene un formato válido"
+                      data-success="Recibirá la respuesta a su mensaje en esta dirección de correo."
+                      >Debe ingresar una dirección de correo electrónico válida
+                      donde desea recibir la respuesta.</span
+                    >
+                  </div>
+                </div>
+                <div class="row marginBottomZero">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">chat</i>
+                    <textarea
+                      id="textarea1"
+                      class="materialize-textarea"
+                      name="message"
+                      required
+                    ></textarea>
+                    <label for="textarea1">Su mensaje</label>
+                  </div>
+                </div>
+                <button
+                  class="btn waves-effect waves-light"
+                  type="submit"
+                  name="action"
+                >
+                  Enviar
+                  <i class="material-icons right white-text">send</i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="page-footer">
       <div class="container">
@@ -502,7 +606,7 @@
               partícipes de su crecimiento!
             </p>
           </div>
-          <div class="col l3 s12" id="contact">
+          <div class="col l3 s12">
             <h5 class="white-text">Contacto</h5>
             <ul>
               <li class="marginTopAndBottom">

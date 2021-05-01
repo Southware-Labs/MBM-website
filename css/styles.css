@@ -22,6 +22,10 @@ h1 {
   margin-bottom: 5px;
 }
 
+.marginBottomZero {
+  margin-bottom: 0px;
+}
+
 .subheader {
   color: #fff;
   text-shadow: 1px 1px #000;
@@ -72,6 +76,10 @@ h1 {
 footer.page-footer {
   margin: 0;
   background-color: #1d5838;
+}
+
+.btn {
+  background-color: #0d6334;
 }
 
 .btn-large {
@@ -166,5 +174,12 @@ footer.page-footer {
   }
   50% {
     background-color: #0d6334;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="main-title-container"] {
+    height: 35vh;
   }
 }
